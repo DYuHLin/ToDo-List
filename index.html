@@ -9,18 +9,85 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
+    <div class="header glass">
+        <div class="icon"><i class='bx bx-notepad'></i></div>
         <div class="title">
-            ToDo Listt
+            To-Do List
         </div>
     </div>
 
     <div class="main">
+        <div class="sidebar glass">
+            <div class="home active">Home</div>
+            <div class="today">Today</div>
+            <div class="week">Week</div>
+            <div class="projects">Projects</div>
+            <ul>
+                <li>School</li>
+                <li>Work</li>
+                <li>Travel</li>
+            </ul>
+            <div class="notes">
+                Notes
+            </div>
+        </div>
+        <div class="container glass">
+            <div class="note__title">Home</div>
+            <button class="new__task glass">Add Task</button>
+            <div class="todo__list">
+                <ul class="list">
+                    <li class="item">
+                        <div class="text">
+                            Get a job
+                        </div>
+                        <div class="right">
+                            <button class="details glass">Details</button>
+                            <div class="date">2023/04/04</div>
+                            <div class="icons">
+                                <i class='bx bx-edit-alt' ></i>
+                                <i class='bx bx-trash' ></i>
+                            </div>
+                        </div>
+                        
+                    </li>
+                    
+                    <li class="item">
+                        <div class="text">
+                            Go to gym
+                        </div>
+                        <div class="right">
+                            <button class="details glass">Details</button>
+                            <div class="date">2023/02/06</div>
+                            <div class="icons">
+                                <i class='bx bx-edit-alt' ></i>
+                                <i class='bx bx-trash' ></i>
+                            </div>
+                        </div>
+                        
+                    </li>
 
+                    <li class="item">
+                        <div class="text">
+                            Code better
+                        </div>
+                        <div class="right">
+                            <button class="details glass">Details</button>
+                            <div class="date">2023/04/16</div>
+                            <div class="icons">
+                                <i class='bx bx-edit-alt' ></i>
+                                <i class='bx bx-trash' ></i>
+                            </div>
+                        </div>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
-    <div class="footer">
-
+    <div class="footer glass">
+        <i class='bx bxl-github'></i>
+        <div class="dev">Damian Lin</div>
     </div>
 
     <script src="main.js"></script>
