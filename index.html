@@ -9,6 +9,67 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="add-project glass hidden">
+        <div class="second-cont-btn">
+            <div class="sec-close-btn" id="second-close">+</div>
+        </div>
+        <div class="project-head-title">Add Project</div>
+
+            <div class="project-input">
+                <div class="project__inputs">
+                    <div class="project-title">Project</div>
+                    <input type="text" id="project" class="project-input" required>
+                </div>
+            </div>
+
+        <div class="submit-btn">
+            <button class="submit__btn" id="submit-btn">Add Task</button>
+        </div>
+    </div>
+    <div class="add-note glass hidden">
+        <div class="cont-btn">
+            <div class="close-btn" id="first-close">+</div>
+        </div>
+        
+        <div class="task-head-title">Add Task</div>
+
+        
+        <div class="task-inputs">
+            <div class="upper-half">
+                <div class="task-name">
+                    <div class="task-title">Task</div>
+                    <input type="text" id="task" class="task-input" required>
+                </div>
+                <div class="task-details">
+                    <div class="detail-task">Details</div>
+                    <textarea name="detils" id="details" cols="30" rows="10" required></textarea>
+                </div>
+            </div>
+
+            <div class="lower-half">
+                <div class="date">
+                    <div class="date-title">Date</div>
+                    <input type="date" name="" id="date-input" required>
+                </div>
+                <div class="priority">
+                    <div class="priority-title">
+                        Priority
+                    </div>
+                    <div class="priority-btns">
+                        <button class="low" id="low-btn">Low</button>
+                        <button class="medium" id="medium-btn">Medium</button>
+                        <button class="high" id="high-btn">High</button>
+                    </div>
+
+                    <div class="submit-btn">
+                        <button class="submit__btn" id="submit-btn">Add Task</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div> 
+    <div class="img-overlay"></div>  
     <div class="header glass">
         <div class="icon"><i class='bx bx-notepad'></i></div>
         <div class="title">
@@ -21,7 +82,10 @@
             <div class="home active">Home</div>
             <div class="today">Today</div>
             <div class="week">Week</div>
-            <div class="projects">Projects</div>
+            <div class="projects">
+                <div class="project-title">Projects</div>
+                <button class="new__task glass">Add Project</button>
+            </div>
             <ul>
                 <li>School</li>
                 <li>Work</li>
