@@ -132,7 +132,7 @@ li:hover{
     font-size: 16px;
 }
 
-.new__task:hover{
+.new__task:hover, .details:hover{
     cursor: pointer;
     background: linear-gradient(135deg, rgba(255, 255, 255 , 0.6), rgba(255, 255, 255, 0));
 }
@@ -285,6 +285,10 @@ textarea{
 
 .low:hover, .medium:hover, .high:hover{
     cursor: pointer;
+}
+
+.chosen{
+    border: 1px solid black;
 }
 
 .low{

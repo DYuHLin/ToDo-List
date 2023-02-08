@@ -23,12 +23,13 @@
             </div>
 
         <div class="submit-btn">
-            <button class="submit__btn" id="submit-btn">Add Task</button>
+            <button class="submit__btn" id="sec-submit-btn">Add Task</button>
         </div>
     </div>
-    <div class="add-note glass hidden">
+
+    <div id="note-window" class="add-note glass hidden">
         <div class="cont-btn">
-            <div class="close-btn" id="first-close">+</div>
+            <div id="first-close" class="close-btn">+</div>
         </div>
         
         <div class="task-head-title">Add Task</div>
@@ -38,7 +39,7 @@
             <div class="upper-half">
                 <div class="task-name">
                     <div class="task-title">Task</div>
-                    <input type="text" id="task" class="task-input" required>
+                    <input type="text" id="task-item" class="task-input" required>
                 </div>
                 <div class="task-details">
                     <div class="detail-task">Details</div>
@@ -62,7 +63,7 @@
                     </div>
 
                     <div class="submit-btn">
-                        <button class="submit__btn" id="submit-btn">Add Task</button>
+                        <button id="submit-btn" class="submit__btn">Add Task</button>
                     </div>
                 </div>
             </div>
@@ -95,11 +96,12 @@
                 Notes
             </div>
         </div>
+
         <div class="container glass">
             <div class="note__title">Home</div>
-            <button class="new__task glass">Add Task</button>
+            <button id="new-task" class="new__task glass">Add Task</button>
             <div class="todo__list">
-                <ul class="list">
+                <ul id = "inputed-items" class="list">
                     <li class="item">
                         <div class="text">
                             Get a job
@@ -112,7 +114,6 @@
                                 <i class='bx bx-trash' ></i>
                             </div>
                         </div>
-                        
                     </li>
                     
                     <li class="item">
