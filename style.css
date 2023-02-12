@@ -176,7 +176,6 @@ li:hover{
     width: 800px;
     height: 550px;
     left: 22%;
- 
     border-radius: 16px;
     padding: 6px;
 }
@@ -187,7 +186,7 @@ li:hover{
     cursor: pointer;
 }
 
-.sec-close-btn{
+.sec-close-btn, .third-close-btn{
     rotate: 45deg;
     font-size: 48px;
     cursor: pointer;
@@ -200,8 +199,8 @@ li:hover{
     justify-content: flex-end;
 }
 
-.second-cont-btn{
-    width: 90%;
+.second-cont-btn, .third-cont-btn{
+    width: 95%;
     display: flex;
     align-items:flex-end;
     justify-content: flex-end;
@@ -238,7 +237,7 @@ li:hover{
     cursor: pointer;
 }
 
-.task-head-title{
+.task-head-title, .detail-head-title{
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 12px;
@@ -281,7 +280,7 @@ textarea{
     gap: 12px;
 }
 
-.task-title, .detail-task, .date-title, .priority-title, .project-title{
+.task-title, .detail-task, .date-title, .priority-title, .project-title, .detail-label{
     font-size: 22px;
     font-weight: 500;
     margin-bottom: 8px;
@@ -336,7 +335,7 @@ body::-webkit-scrollbar {
     position: fixed;
     z-index: 1;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     width: 600px;
     height: 220px;
@@ -344,4 +343,26 @@ body::-webkit-scrollbar {
     top: 30%;
     border-radius: 16px;
     padding: 6px;
+    padding-left: 30px;
+  }
+
+  .view__details{
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    left: 28%;
+    top: 20%;
+    border-radius: 16px;
+    padding: 6px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    width: 600px;
+  }
+
+  .detail-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
