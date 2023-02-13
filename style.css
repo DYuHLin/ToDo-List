@@ -165,7 +165,7 @@ li:hover{
     font-size: 22px;
     font-weight: 500;
 }
-.add-note{
+.add-note, .edit-note{
     flex: 1;
     position: fixed;
     z-index: 1;
@@ -180,7 +180,7 @@ li:hover{
     padding: 6px;
 }
 
-.close-btn{
+.close-btn, .fourth-close-btn{
     rotate: 45deg;
     font-size: 48px;
     cursor: pointer;
@@ -192,7 +192,7 @@ li:hover{
     cursor: pointer;
 }
 
-.cont-btn{
+.cont-btn, .fourth-cont-btn{
     width: 90%;
     display: flex;
     align-items:flex-end;
@@ -237,7 +237,7 @@ li:hover{
     cursor: pointer;
 }
 
-.task-head-title, .detail-head-title{
+.task-head-title, .detail-head-title, .edit-head-title{
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 12px;
