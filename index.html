@@ -32,9 +32,13 @@
                 <div class="detail-label">Priority:</div>
                 <div class="detail-priority" id="detail-priority"></div>
             </div>
+            <div class="task-detail-priority">
+                <div class="detail-label">Project:</div>
+                <div class="detail-priority" id="detail-project"></div>
+            </div>
         </div>
     </div>
-    <div class="add-project glass hidden">
+    <div id="project-window" class="add-project glass hidden">
         <div class="second-cont-btn">
             <div class="sec-close-btn" id="second-close">+</div>
         </div>
@@ -48,7 +52,7 @@
             </div>
 
         <div class="submit-btn">
-            <button class="submit__btn" id="sec-submit-btn">Add Task</button>
+            <button class="submit__btn" id="sec-submit-btn">Add Project</button>
         </div>
     </div>
 
@@ -140,17 +144,15 @@
 
     <div class="main">
         <div class="sidebar glass">
-            <div class="home active">Home</div>
+            <div id="home-tab" class="home active">Home</div>
             <div class="today">Today</div>
             <div class="week">Week</div>
             <div class="projects">
                 <div class="project-title">Projects</div>
-                <button class="new__task glass">Add Project</button>
+                <button id="open-project" class="new__task glass">Add Project</button>
             </div>
             <ul id="project-list">
-                <li id="project-item">School</li>
-                <li id="project-item">Work</li>
-                <li id="project-item">Travel</li>
+                
             </ul>
             <div class="notes">
                 Notes
@@ -158,7 +160,7 @@
         </div>
 
         <div class="container glass">
-            <div class="note__title">Home</div>
+            <div id="note-content-title" class="note__title">Home</div>
             <button id="new-task" class="new__task glass">Add Task</button>
             <div class="todo__list">
                 <ul id = "inputed-items" class="list">
