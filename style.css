@@ -97,7 +97,15 @@ li{
     justify-content: space-between;
 }
 
-li:hover{
+.project-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    width: 100%;
+}
+
+.project-container:hover{
     background: linear-gradient(135deg, rgba(255, 255, 255 , 0.4), rgba(255, 255, 255, 0))
 }
 
@@ -134,11 +142,14 @@ li:hover{
     font-size: 16px;
 }
 
-.new__task:hover, .details:hover, .del__btn:hover, .edi-btn:hover, .del__btn-2:hover{
+.new__task:hover, .details:hover, .del__btn:hover, .edi-btn:hover{
     cursor: pointer;
     background: linear-gradient(135deg, rgba(255, 255, 255 , 0.6), rgba(255, 255, 255, 0));
 }
 
+.del__btn-2:hover{
+    cursor: pointer;
+}
 
 .item{
     margin-bottom: 12px;
