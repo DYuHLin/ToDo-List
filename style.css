@@ -84,6 +84,13 @@ body{
     box-shadow: 0 0 32px 0 rgba(255, 255, 255, 0.37);
 }
 
+.glass-two{
+    background: linear-gradient(135deg, rgba(255, 255, 255 , 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
 ul{
     list-style: none;
 }
@@ -387,3 +394,46 @@ body::-webkit-scrollbar {
     flex-direction: column;
     gap: 20px;
   }
+
+  .note-container-list{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 0.2fr);
+    grid-template-rows: auto;
+    margin-top: 18px;
+    margin-left: 12px;
+    gap: 10px;
+  }
+
+  .note-container{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border-radius: 7px;
+    padding: 14px;
+    margin-bottom: 12px;
+  }
+
+  .note-close-btn{
+    rotate: 45deg; 
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.note-close-container{
+    width: 95%;
+    display: flex;
+    align-items:flex-end;
+    justify-content: flex-end;
+}
+
+.note-title{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.note-details{
+    font-size: 18px;
+}
