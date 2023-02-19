@@ -144,7 +144,7 @@ li{
     background: linear-gradient(135deg, rgba(255, 255, 255 , 0.6), rgba(255, 255, 255, 0))
 }
 
-.new__task, .details{
+.new__task, .details, .new-dl-btn{
     padding: 7px;
     width: 100px;
     border-radius: 8px;
@@ -153,7 +153,11 @@ li{
     font-size: 16px;
 }
 
-.new__task:hover, .details:hover, .del__btn:hover, .edi-btn:hover{
+.new-dl-btn{
+    width: 150px;
+}
+
+.new__task:hover, .details:hover, .del__btn:hover, .edi-btn:hover, .new-dl-btn:hover{
     cursor: pointer;
     background: linear-gradient(135deg, rgba(255, 255, 255 , 0.6), rgba(255, 255, 255, 0));
 }
@@ -440,4 +444,9 @@ body::-webkit-scrollbar {
 
 .note-details{
     font-size: 18px;
+}
+
+.main-btns{
+    display: flex;
+    width: 100%;
 }
