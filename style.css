@@ -461,3 +461,47 @@ body::-webkit-scrollbar {
     display: flex;
     width: 100%;
 }
+
+@media (max-width: 1000px){
+    .main{
+        display: flex;
+    }
+    .container{
+        width: 100%;
+    }
+    .sidebar{
+        width: 30%;
+    }
+
+    .edit-note, .add-note{
+        width: 650px;
+    }
+
+    .date{
+        display: none;
+    }
+}
+
+@media (max-width: 850px){
+    .main{
+        display: flex;
+    }
+    .container{
+        width: 100%;
+    }
+    .sidebar{
+        width: 20%;
+    }
+
+    .edit-note, .add-note{
+        width: 650px;
+    }
+
+    .date{
+        display: none;
+    }
+
+    .details{
+        display: none;
+    }
+}
